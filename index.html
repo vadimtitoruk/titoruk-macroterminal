@@ -176,7 +176,7 @@
     async function fetchQuote(symbol) {
       try {
         const response = await fetch(
-          `/api/market?symbol=${symbol}`
+          `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=${API_KEY}`
         );
 
         const data = await response.json();
@@ -351,7 +351,7 @@
 
     buildDashboard();
 
-    //setInterval(buildDashboard, 30000);
+    setInterval(buildDashboard, 30000);
   </script>
 </body>
 </html>
