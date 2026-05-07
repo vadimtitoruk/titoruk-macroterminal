@@ -1,9 +1,0 @@
-{
-  "functions": {
-    "api/*.js": {
-      "runtime": "@vercel/node@3.0.0"
-    }
-  },
-  "buildCommand": "npx brunch build --production",
-  "installCommand": "npm install"
-}
